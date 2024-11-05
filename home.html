@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Points Dashboard</title>
+</head>
+<body>
+
+<h2>Welcome to Your Points Dashboard</h2>
+
+<!--add points -->
+<h3>Add Points</h3>
+<form action="addPoints" method="post">
+    <label for="receipt">Enter Receipt Number:</label>
+    <input type="text" id="receipt" name="receipt" required><br><br>
+    <input type="submit" value="Add Points">
+</form>
+
+<!-- spend points -->
+<h3>Spend Points on Gift Cards</h3>
+<form action="spendPoints" method="post">
+    <label>Select Gift Card:</label><br>
+    <input type="radio" id="gift10" name="gift_card" value="10">
+    <label for="gift10">€10 Gift Card (50 points)</label><br>
+
+    <input type="radio" id="gift15" name="gift_card" value="15">
+    <label for="gift15">€15 Gift Card (75 points)</label><br>
+
+    <input type="radio" id="gift20" name="gift_card" value="20">
+    <label for="gift20">€20 Gift Card (100 points)</label><br><br>
+
+    <input type="submit" value="Redeem Gift Card">
+</form>
+
+</body>
+</html>
+
